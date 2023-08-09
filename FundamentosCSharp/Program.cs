@@ -17,8 +17,6 @@ namespace FundamentosCSharp
             //Console.WriteLine("O nome digitado foi : " + nome);
             //Console.ReadKey();
 
-
-
             //// 2
             //int x;
             //Console.WriteLine("Entre com um número: ");
@@ -27,16 +25,12 @@ namespace FundamentosCSharp
             //Console.WriteLine("O número digitado foi! " + x);
             //Console.ReadKey();
 
-
-
             //// 3 
             //Console.WriteLine("Entre com um número: ");
             //String texto2 = Console.ReadLine();
             //x = Convert.ToInt16(texto2);
             //Console.WriteLine("O número digitado foi! " + x);
             //Console.ReadKey();
-
-
 
             //// 4 
             //Console.WriteLine("Entre com um número decimal: ");
