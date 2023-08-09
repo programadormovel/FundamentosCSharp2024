@@ -180,29 +180,62 @@ namespace FundamentosCSharp
 
 
 
-            // 13 
-            int[] vetor = new int[10];
-            for (int x = 0; x < vetor.Length; x++)
-            {
-                vetor[x] = x + 1;
-                Console.WriteLine("O valor do índice " + x + " do vetor é " + vetor[x] + " ");
-            }
+            //// 13 
+            //int[] vetor = new int[10];
+            //for (int x = 0; x < vetor.Length; x++)
+            //{
+            //    vetor[x] = x + 1;
+            //    Console.WriteLine("O valor do índice " + x + " do vetor é " + vetor[x] + " ");
+            //}
 
 
 
+            //Console.ReadKey();
+
+
+
+            //// 14
+            //int[,] matriz = new int[5, 2];
+            //for (int x = 0; x < matriz.GetLength(0); x++)
+            //{
+            //    for (int y = 0; y < matriz.GetLength(1); y++)
+            //    {
+            //        matriz.SetValue(x+y+1, x, y);
+
+            //        Console.WriteLine("O valor do índice " + x + "," + y + " da matriz é " + matriz[x, y] + " ");
+            //    }
+            //}
+            //Console.ReadKey();
+
+            //15
+            MetodoSemRetorno();
+
+        }
+
+        private static void MetodoSemRetorno()
+        {
+            Console.WriteLine("Ok, vamos lá!!!");
             Console.ReadKey();
 
+            // Classe Animal
+            Animal dog = new Animal();
+            dog.nome = "Dogão";
+            dog.idade = 12;
+            dog.latir("alemão");
 
+        }
+    }
 
-            // 14
-            int[,] matriz = new int[5,2];
-            for (int x = 0; x < matriz.Rank; x++)
-            {
-                matriz[x,x] = x + 1;
-                    Console.WriteLine("O valor do índice " + x + " da matriz é " + matriz.GetLength(x) + " ");
-            }
+    public class Animal
+    {
+        public string nome;
+        protected string raca;
+        internal int idade;
+        private string porte;
 
-            Console.ReadKey();
+        public void latir(string raca)
+        {
+            this.raca = raca;
         }
     }
 }
